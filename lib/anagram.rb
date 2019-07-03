@@ -4,10 +4,10 @@ class Anagram
     @word = word
   end
 
-  def match(string)
+  def match(array)
    match = []
-    @string = string.split(", ")
-   @string.each do |word|
+    @array = array
+   @array.each do |word|
      match << word if word.split("").sort == @word.split("").sort
    end
   match
